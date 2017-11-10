@@ -31,10 +31,20 @@ const cardsOriginal = [
     },
 ];
 
+const cardsDisplay = cardsOriginal.splice();
 
+console.log (cardsDisplay);
+
+cardsDisplay.sort((a, z) => {
+    return 0.5 - Math.random();
+});
+
+console.log (cardsDisplay);
 /* make a copy of the array and sort it randomly using arrow function
 that copy will be used to generate the card content
 use id as key
 use index +1 as the cardNumber
 use array.length to determine the last card
 */
+
+//export default cardsDisplay
